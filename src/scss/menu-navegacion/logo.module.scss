@@ -1,0 +1,39 @@
+// Base de colores:
+:root {
+	--color-1: #f2f5ff;
+	--color-2: #00a82d;
+	--color-3: #cada2a;
+	--color-4: #252323;
+	--color-5: #98b2ec;
+	--color-6: #b6cafc;
+	--color-7: #662483;
+}
+
+.logo {
+	width: 4vw;
+	margin-left: 5%;
+	border-radius: 5px;
+	background: var(--color-1);
+	place-items: center;
+
+	display: grid;
+	img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.logo {
+		width: 15vw;
+		margin: 0 1vw;
+		margin-left: 5%;
+		border-radius: 5px;
+		background: var(--color-1);
+		place-items: center;
+
+		display: grid;
+		img {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+// Base de colores:
+:root {
+	--color-1: #f2f5ff;
+	--color-2: #00a82d;
+	--color-3: #cada2a;
+	--color-4: #252323;
+	--color-5: #98b2ec;
+	--color-6: #b6cafc;
+	--color-7: #662483;
+}
+
+.seccionNosotros {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 90vw;
+	height: 90vh;
+	background: #43d223b1;
+	margin-top: 2vw;
+	justify-self: center;
+
+	display: grid;
+	div {
+        height: 70%;
+        background: #f2f5ff7c;
+        align-self: center;
+        color: var(--color-4);
+
+        display: grid;
+		h1 {
+			color: var(--color-4);
+			font-size: 5vw;
+			margin-top: 2vw;
+			margin-left: 2vw;
+		}
+		p {
+			margin-top: -2vw;
+			margin-left: 2vw;
+		}
+		ul {
+			margin-left: 4vw;
+		}
+	}
+	img {
+		position: absolute;
+		align-self: center;
+		justify-self: flex-end;
+		width: 40vw;
+        filter: drop-shadow(0 0 5px #00000099);
+	}
+}

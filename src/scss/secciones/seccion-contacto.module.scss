@@ -1,0 +1,85 @@
+// Base de colores:
+:root {
+	--color-1: #f2f5ff;
+	--color-2: #00a82d;
+	--color-3: #cada2a;
+	--color-4: #252323;
+	--color-5: #98b2ec;
+	--color-6: #b6cafc;
+	--color-7: #662483;
+}
+
+.seccionContacto {
+	position: relative;
+	width: 90vw;
+	height: 90vh;
+	background: radial-gradient(var(--color-5), var(--color-6));
+	justify-self: center;
+
+	display: grid;
+	h1 {
+		color: var(--color-4);
+		font-size: 5vw;
+		margin-top: 5vw;
+		margin-left: 5vw;
+	}
+	.formulario {
+		width: 90vw;
+
+		display: grid;
+		.dosInputs {
+			justify-content: space-around;
+
+			display: flex;
+			span {
+				width: 40vw;
+				height: min-content;
+
+				display: grid;
+				h3 {
+					margin-left: 5%;
+				}
+				input {
+					width: 90%;
+					height: min-content;
+					font-size: 1.5vw;
+					justify-self: center;
+					border-radius: 5px;
+					border: none;
+					outline: none;
+                    padding: 1vw;
+					&:focus {
+						outline: solid 2px #662483;
+					}
+				}
+			}
+		}
+		.unInput {
+			width: 90%;
+            justify-self: center;
+
+			display: grid;
+			textarea {
+                font-size: 2vw;
+                width: 90%;
+                resize: none;
+			}
+		}
+        button {
+            border: none;
+            border-radius: 5px;
+            padding: 7px;
+            color: var(--color-1);
+            background: var(--color-7);
+            margin-right: 5%;
+            width: max-content;
+            height: min-content;
+            justify-self: end;
+            cursor: pointer;
+            box-shadow: 0 3px 5px #00000099;
+            &:hover {
+                box-shadow: 0 5px 10px #00000099;
+            }
+        }
+	}
+}

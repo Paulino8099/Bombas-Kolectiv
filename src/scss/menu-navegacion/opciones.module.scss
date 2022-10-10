@@ -1,0 +1,15 @@
+// Base de colores:
+:root {
+	--color-1: #f2f5ff;
+	--color-2: #00a82d;
+	--color-3: #cada2a;
+	--color-4: #252323;
+}
+
+.opciones {
+    list-style: none;
+    margin-right: 5%;
+    gap: 1vw;
+
+    display: flex;
+}
