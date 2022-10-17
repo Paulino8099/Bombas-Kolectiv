@@ -8,13 +8,13 @@ import { Opcion } from './opcion';
 // import { BsAbout, BsWater, BsPersonSquare  } from 'react-icons/bs';
 // import { AiTwotoneHome} from 'react-icons/ai';
 
-export const Opciones = () => {
+export const Opciones = ({ condicional }) => {
 	return (
-		<ul className={estilos.opciones}>
-			<Opcion id={1} nombreOpcion={'Inicio'} href="#Inicio" />
-			<Opcion id={1} nombreOpcion={'Nosotros'} href="#Nosotros" />
-			<Opcion id={1} nombreOpcion={'Bombas'} href="#Bombas" />
-			<Opcion id={1} nombreOpcion={'Contacto'} href="#Contacto" />
+		<ul className={condicional ? estilos.opciones : estilos.opciones + ' ' + estilos.activar_opciones}>
+			<Opcion id={1} nombreOpcion={'Inicio'} href="#Inicio" condicional={condicional} />
+			<Opcion id={1} nombreOpcion={'Nosotros'} href="#Nosotros" condicional={condicional} />
+			<Opcion id={1} nombreOpcion={'Bombas'} href="#Bombas" condicional={condicional} />
+			<Opcion id={1} nombreOpcion={'Contacto'} href="#Contacto" condicional={condicional} />
 		</ul>
 	);
 };

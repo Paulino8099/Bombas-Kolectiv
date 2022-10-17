@@ -1,0 +1,44 @@
+// Base de colores:
+:root {
+	--color-1: #f2f5ff;
+	--color-2: #00a82d;
+	--color-3: #cada2a;
+	--color-4: #252323;
+	--color-5: #98b2ec;
+	--color-6: #b6cafc;
+	--color-7: #662483;
+}
+
+.btnAbrirCerrar {
+	width: 0;
+	border-radius: 5px;
+	opacity: 0;
+	pointer-events: none;
+
+	display: grid;
+}
+
+@media screen and (max-width: 500px) {
+	.btnAbrirCerrar {
+        position: absolute;
+		width: 7vw;
+        right: 0;
+		pointer-events: visible;
+        padding: 0.5vw;
+        gap: 0.5vw;
+		opacity: 1;
+
+		display: grid;
+        span {
+            width: 5.5vw;
+            height: 1vw;
+            background: var(--color-7);
+            border-radius: 5px;
+            place-self: center;
+        }
+        span:nth-child(2) {
+            margin: 0.5vw 0;
+            width: 4.5vw;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 .opcion {
-    color: var(--color-1);
+	color: var(--color-1);
 	font-size: 1.5vw;
 	cursor: pointer;
 	&:hover {
@@ -7,12 +7,20 @@
 	}
 }
 
+// dispositivos
 @media screen and (max-width: 500px) {
 	.opcion {
-		font-size: 5vw;
+		font-size: 0;
 		cursor: pointer;
+		opacity: 0;
+		pointer-events: none;
 		&:hover {
 			text-decoration: underline;
+		}
+		&.activar_opcion {
+			font-size: 7vw;
+			opacity: 1;
+			pointer-events: visible;
 		}
 	}
 }

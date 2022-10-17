@@ -4,7 +4,7 @@ import estilos from '../../scss/footer/footer.module.scss'
 export const Footer = () => {
 	return (
 		<footer className={estilos.footer}>
-			<h1>Contatar</h1>
+			<h1>Contactar</h1>
 			<ul>
 				<li>+1 (829) 876 7637</li>
 				<li>dapa7928@gmail.com</li>

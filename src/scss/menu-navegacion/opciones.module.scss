@@ -7,9 +7,21 @@
 }
 
 .opciones {
-    list-style: none;
-    margin-right: 5%;
-    gap: 1vw;
+	list-style: none;
+	margin-right: 5%;
+	gap: 1vw;
 
-    display: flex;
+	display: flex;
+}
+
+@media screen and (max-width: 500px) {
+	.opciones {
+        gap: 0;
+		flex-direction: column;
+		&.activar_opciones {
+			padding: 0 2vw;
+			margin-top: 7vw;
+			gap: 1vw;
+		}
+	}
 }

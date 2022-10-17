@@ -1,9 +1,9 @@
 // estilos
 import estilos from '../../scss/menu-navegacion/opcion.module.scss';
 
-export const Opcion = ({ id, nombreOpcion, icono , href}) => {
+export const Opcion = ({ id, nombreOpcion, icono, href, condicional }) => {
 	return (
-		<a className={estilos.opcion} href={href }>
+		<a className={condicional ? estilos.opcion : estilos.opcion + ' ' + estilos.activar_opcion} href={href}>
 			{nombreOpcion}
 		</a>
 	);

@@ -28,13 +28,13 @@ export const SeccionBomba = () => {
 						Bomba periférica 3/4 Hp 42m <br /> Pluvius QB 70
 					</h3>
 				</span>
+				<span>
+					<img src="./img/png/bomba-rojaYnegra.png" alt="" />
+					<h3>
+						Bombas Peristáticas <br /> industriales <br />Watson Marlow
+					</h3>
+				</span>
 			</div>
-			<span className={estilos.bombaRojaYnegra}>
-				<h3>
-                    Bombas Peristáticas <br /> industriales <br />Watson Marlow
-				</h3>
-				<img src="./img/png/bomba-rojaYnegra.png" alt="" />
-			</span>
 		</section>
 	);
 };

@@ -12,5 +12,12 @@
 .secciones {
 	margin-top: 5vw;
 
-    display: grid;
+	display: grid;
+}
+
+// dispositivos
+@media screen and (max-width: 500px) {
+	.secciones {
+		margin-top: 0;
+	}
 }

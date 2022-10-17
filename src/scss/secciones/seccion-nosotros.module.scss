@@ -18,34 +18,98 @@
 	background: #43d223b1;
 	margin-top: 2vw;
 	justify-self: center;
+	align-items: center;
 
 	display: grid;
+	grid-template-columns: repeat(8, auto);
+	grid-template-rows: repeat(8, auto);
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 70%;
+		background: #f2f5ff7c;
+		align-self: center;
+	}
 	div {
-        height: 70%;
-        background: #f2f5ff7c;
-        align-self: center;
-        color: var(--color-4);
+		height: max-content; 
+		color: var(--color-4);
+		z-index: 5;
+		gap: 2vw;
 
-        display: grid;
+		display: grid;
+		grid-column: 1/5;
+		grid-row: 1/9;
+		grid-template-columns: repeat(8, auto);
+		grid-template-rows: repeat(8, auto);
 		h1 {
 			color: var(--color-4);
 			font-size: 5vw;
-			margin-top: 2vw;
 			margin-left: 2vw;
+
+			grid-column: 1/9;
+			grid-row: 1/2;
 		}
 		p {
-			margin-top: -2vw;
 			margin-left: 2vw;
+
+			grid-column: 1/9;
+			grid-row: 2/3;
 		}
 		ul {
 			margin-left: 4vw;
+
+			grid-column: 1/9;
+			grid-row: 3/4;
+		}
+		i {
+			margin-left: 2vw;
+
+			grid-column: 1/9;
+			grid-row: 4/5;
 		}
 	}
 	img {
-		position: absolute;
-		align-self: center;
-		justify-self: flex-end;
-		width: 40vw;
-        filter: drop-shadow(0 0 5px #00000099);
+		width: 45vw;
+		filter: drop-shadow(0 0 5px #00000099);
+		z-index: 5;
+
+		grid-column: 6/9;
+		grid-row: 1/9;
+	}
+}
+
+// dispositivo
+@media screen and (max-width: 500px) {
+	.seccionNosotros {
+		width: 100vw; //90vw
+		height: max-content; //90vh
+		&::after {
+			width: 85%; //100%
+			height: 90%; //70%
+			justify-self: center; //añadido
+			align-self: flex-start; //center
+		}
+		div {
+			width: 80%; //añadido
+			justify-self: center; //añadido
+
+			grid-column: 1/9; //1/5
+			grid-row: 1/5; //1/9
+			h1 {
+				// font-weight: 800; //añadido
+				font-size: 10vw; //5vw
+			}
+			p {
+				font-weight: 800; //añadido
+			}
+		}
+		img {
+			width: 90vw; //45vw
+			justify-self: center;
+	
+			grid-column: 1/9; //6/9
+			grid-row: 5/9; //1/9
+		}
 	}
 }

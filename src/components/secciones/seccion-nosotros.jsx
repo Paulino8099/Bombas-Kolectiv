@@ -13,7 +13,7 @@ export const SeccionNosotros = () => {
 					<li>Bombas Sanitarias</li>
 					<li>Instrumentación</li>
 				</ul>
-				<p>Entre otros servicios.</p>
+				<i>Entre otros servicios...</i>
 			</div>
 			<img src="./img/png/2bombas-amarillas.png" alt="" />
 		</section>
