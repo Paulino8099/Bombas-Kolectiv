@@ -26,7 +26,7 @@ export const SeccionContacto = () => {
 					<input type="email" placeholder="Escriba su email aquí." />
 				</span>
 				<span>
-					<h3>Descripción: {`(...Màximo de caracteres, 500/${500 - valor.length})`}</h3>
+					<h3>Descripción: <br /> {`...Màximo de caracteres: 500/${500 - valor.length}`}</h3>
 					<textarea
 						value={valor}
 						maxLength={500}

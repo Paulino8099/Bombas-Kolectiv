@@ -17,8 +17,6 @@ ReactDOM.render(
 	<BrowserRouter>
 		<Routes>
 			<Route path="/" element={<App />}>
-				{/* <Route path="detallesUnidad" element={} />
-				<Route path="*" element={} /> */}
 			</Route>
 		</Routes>
 	</BrowserRouter>,
